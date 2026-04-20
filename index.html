@@ -6,50 +6,62 @@
     <title>AgroSphere Team</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        /* Εξατομικευμένα χρώματα */
         .bg-custom-champagne { background-color: #F7E7CE; }
         .bg-custom-dark-green { background-color: #102C26; }
         .text-custom-dark-green { color: #102C26; }
         .text-custom-champagne { color: #F7E7CE; }
+        
+        /* Animation για το Logo */
+        .logo-fade { 
+            animation: fadeIn 1.2s ease-out; 
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
-<body class="bg-custom-dark-green flex items-center justify-center min-h-screen p-4">
+<body class="bg-custom-dark-green flex items-center justify-center min-h-screen p-6">
 
     <div class="flex flex-col items-center max-w-md w-full">
         
-        <img src="C:\Users\panka\OneDrive\Υπολογιστής\Estimatrix WEB\ΣΗΜΑΤΑ\ATS\AgroSphere logo.png" 
+        <img src="AgroSphere%20logo.png" 
              alt="AgroSphere Logo" 
-             class="mb-8 w-56 h-auto object-contain">
+             class="mb-8 w-60 h-auto object-contain logo-fade">
         
-        <div class="bg-custom-champagne p-8 rounded-2xl shadow-2xl w-full text-center">
-            <h1 class="text-3xl font-bold mb-2 text-custom-dark-green">Our Team</h1>
-            <p class="text-gray-700 mb-6 font-medium">Connect with us on LinkedIn!</p>
+        <div class="bg-custom-champagne p-8 rounded-3xl shadow-2xl w-full text-center border border-opacity-10 border-black">
+            <h1 class="text-3xl font-extrabold mb-2 text-custom-dark-green tracking-tight">Our Team</h1>
+            <p class="text-gray-700 mb-8 font-medium opacity-75 uppercase text-xs tracking-widest">Connect with us on LinkedIn</p>
             
             <div class="space-y-4">
                 <a href="https://www.linkedin.com/in/dimitrios-iliopoulos-7841a0355/"
                    target="_blank"
-                   class="block bg-custom-dark-green text-custom-champagne py-3 px-4 rounded-xl hover:opacity-90 transition transform hover:scale-105 shadow-md font-semibold text-lg">
+                   class="block bg-custom-dark-green text-custom-champagne py-3.5 px-4 rounded-2xl hover:opacity-90 transition transform hover:-translate-y-1 shadow-md font-bold text-lg">
                    Dimitrios Iliopoulos
                 </a>
 
                 <a href="https://www.linkedin.com/in/efstathioskouroupakis/"
                    target="_blank"
-                   class="block bg-custom-dark-green text-custom-champagne py-3 px-4 rounded-xl hover:opacity-90 transition transform hover:scale-105 shadow-md font-semibold text-lg">
+                   class="block bg-custom-dark-green text-custom-champagne py-3.5 px-4 rounded-2xl hover:opacity-90 transition transform hover:-translate-y-1 shadow-md font-bold text-lg">
                    Efstathios Kouroupakis
                 </a>
 
                 <a href="https://www.linkedin.com/in/konstantinos-kourdis-2108312b0/"
                    target="_blank"
-                   class="block bg-custom-dark-green text-custom-champagne py-3 px-4 rounded-xl hover:opacity-90 transition transform hover:scale-105 shadow-md font-semibold text-lg">
+                   class="block bg-custom-dark-green text-custom-champagne py-3.5 px-4 rounded-2xl hover:opacity-90 transition transform hover:-translate-y-1 shadow-md font-bold text-lg">
                    Konstantinos Kourdis
                 </a>
 
                 <a href="https://www.linkedin.com/in/stamatios-kanakis/"
                    target="_blank"
-                   class="block bg-custom-dark-green text-custom-champagne py-3 px-4 rounded-xl hover:opacity-90 transition transform hover:scale-105 shadow-md font-semibold text-lg">
+                   class="block bg-custom-dark-green text-custom-champagne py-3.5 px-4 rounded-2xl hover:opacity-90 transition transform hover:-translate-y-1 shadow-md font-bold text-lg">
                    Stamatios Kanakis
                 </a>
             </div>
         </div>
+
+        <p class="mt-8 text-custom-champagne opacity-30 text-xs font-light">© 2026 AgroSphere Technologies</p>
     </div>
 
 </body>
